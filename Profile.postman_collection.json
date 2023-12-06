@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "7b37125f-b39b-4f05-9b3a-ec9eb57c58e3",
+		"name": "Profile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27354390",
+		"_collection_link": "https://galactic-zodiac-609411.postman.co/workspace/New-Team-Workspace~368ca613-0cf4-41f9-9557-65382a5563c9/collection/27354390-7b37125f-b39b-4f05-9b3a-ec9eb57c58e3?action=share&source=collection_link&creator=27354390"
+	},
+	"item": [
+		{
+			"name": "Get profiel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Ejemplo\",\n  \"lastname\": \"Prueba\",\n  \"email\": \"ejemplo@prueba.com\",\n  \"city\": \"Ciudad Ejemplo\",\n  \"country\": \"País Ejemplo\",\n  \"summary\": \"Esto es un resumen de prueba para el perfil.\",\n  \"frameworks\": [\n    {\n      \"name\": \"React\",\n      \"level\": \"Intermedio\",\n      \"year\": 2023\n    },\n    {\n      \"name\": \"Node\",\n      \"level\": \"Principiante\",\n      \"year\": 2023\n    }\n  ],\n  \"hobbies\": [\n    {\n      \"name\": \"Leer\",\n      \"description\": \"Disfruto leyendo libros de diversos géneros.\"\n    },\n    {\n      \"name\": \"Cocinar\",\n      \"description\": \"Me gusta experimentar en la cocina y probar nuevas recetas.\"\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/create-profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"create-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ALl profiles",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/delete-all-profiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"delete-all-profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/edit-profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"edit-profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
